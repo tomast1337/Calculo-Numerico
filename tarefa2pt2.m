@@ -15,6 +15,6 @@ Saída:
 #}
 
 
-arco = input("Digite um arco em grau: ")
+arco = input("Digite um arco em grau: ");
 
-printf("%s graus equivalem a %.4f radianos\n", arco, (arco * (pi/180)))
+printf("%s graus equivalem a %.4f radianos\n", arco, (arco * (pi/180)));
