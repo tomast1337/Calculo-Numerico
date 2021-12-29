@@ -5,5 +5,14 @@
 #}
 
 function result = maior_no_intervalo(vetor,i,j)
+    for k = i:j
+        if vetor(k) > result
+            result = vetor(k);
+        endif
+    endfor
+end
+
+
+function result = maior_no_intervalo(vetor,i,j)
     result = max(vetor(i:j));
 end
