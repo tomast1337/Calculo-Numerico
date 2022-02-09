@@ -3,9 +3,9 @@ k = rem(u,4) +1;
 A = [(u+2) 2 1 1; 1 (u+1) 2 -1; 3 2 (u+1) -2; 4 3 2 (u+2)];
 b = [(7-u);(2-u);(4-u);(10-u)];
 
-print("A = ");
+disp("A = ");
 disp(A);
-print("b = ");
+disp("b = ");
 disp(b);
 
 #{
@@ -52,7 +52,10 @@ colk = U\y;
 
 invA = inv(A);
 
-disp("Coluna inverça K de A = ");
+disp("k = ");
+disp(k);
+
+disp("Coluna inverça k de A = ");
 disp(colk);
 
 disp("A-¹ = ");
