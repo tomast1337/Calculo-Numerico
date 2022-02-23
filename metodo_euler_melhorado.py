@@ -15,8 +15,8 @@ def metodo_euler_melhorado(f, x0, y0, h, n):
         print("-----------------------------")
     return x, y
 
-def fy(x, y): return y/(x/2.5)
-def f(x): return pow(0.5, -1.5)*pow(x, 2.5)
+fy = lambda x, y:  y/(x/2.5)
+f = lambda x :pow(0.5, -1.5)*pow(x, 2.5)
 
 x = 2
 x0 = .5
