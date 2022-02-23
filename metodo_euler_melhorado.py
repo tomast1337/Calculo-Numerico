@@ -1,7 +1,3 @@
-# método de Euler melhorado
-from re import X
-
-
 def metodo_euler_melhorado(f, x0, y0, h, n):
     x = [x0]
     y = [y0]
@@ -19,17 +15,14 @@ def metodo_euler_melhorado(f, x0, y0, h, n):
         print("-----------------------------")
     return x, y
 
-
 def fy(x, y): return y/(x/2.5)
 def f(x): return pow(0.5, -1.5)*pow(x, 2.5)
 
 x = 2
-
 x0 = .5
 y0 = .5
 h = .5
 n = int(2/h)-1
-
 _, y = metodo_euler_melhorado(fy, x0, y0, h, n)
 
 print(f'resultado real f({x})={f(x)}')
